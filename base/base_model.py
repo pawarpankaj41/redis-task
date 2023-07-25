@@ -1,0 +1,12 @@
+from django.db import models
+
+
+class AppBaseModel(models.Model):
+    """
+    The base model that is to be inherited everywhere.
+    """
+    created = models.DateTimeField(auto_now_add=True, null=True)
+    modified = models.DateTimeField(auto_now=True, null=True)
+    
+    class Meta:
+        abstract = True
