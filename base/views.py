@@ -91,7 +91,7 @@ def location_points(request):
     cache_key = f"location_points:{device_id}:{start_time}:{end_time}"
     cached_data = cache.get(cache_key)
     if cached_data:
-        return JsonResponse(cached_data)
+        return JsonResponse(cached_data, safe=False)
 
     try:
         location_points = DeviceInfo.objects.filter(
