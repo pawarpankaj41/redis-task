@@ -9,8 +9,8 @@ This is the Assignment Task.
 #### CURL 1
 
 ```
-curl -X GET \
-  'https://redis-task-aaim0hck5-pawarpankaj41-gmailcom.vercel.app/base/location_points/?device_id=25029&start_time=&end_time=' \
+curl  -X GET \
+  'localhost:8000/base/location_points/?device_id=25029&start_time=2021-04-08T07%3A30%3A10Z&end_time=2022-04-08T07%3A30%3A10Z' \
   --header 'Accept: */*' \
   --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
 ```
