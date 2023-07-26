@@ -10,7 +10,7 @@ This is the Assignment Task.
 
 ```
 curl  -X GET \
-  'localhost:8000/base/location_points/?device_id=25029&start_time=2021-04-08T07%3A30%3A10Z&end_time=2022-04-08T07%3A30%3A10Z' \
+  'https://redis-task.vercel.app/base/location_points/?device_id=25029&start_time=2021-04-08T07%3A30%3A10Z&end_time=2022-04-08T07%3A30%3A10Z' \
   --header 'Accept: */*' \
   --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
 ```
@@ -19,7 +19,7 @@ curl  -X GET \
 
 **HTTP Method**: GET
 
-**Endpoint**: `https://redis-task-aaim0hck5-pawarpankaj41-gmailcom.vercel.app/base/location_points/`
+**Endpoint**: `https://redis-task.vercel.app/base/location_points/`
 
 **Parameters**:
 - `device_id`: (integer) The ID of the device. Example: 25029
@@ -37,7 +37,7 @@ curl  -X GET \
 
 ```
 curl -X GET \
-  'https://redis-task-lal6p80a8-pawarpankaj41-gmailcom.vercel.app/base/latest_info/?device_id=25029' \
+  'https://redis-task.vercel.app/base/latest_info/?device_id=25029' \
   --header 'Accept: */*' \
   --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
 ```
@@ -46,7 +46,7 @@ curl -X GET \
 
 **HTTP Method**: GET
 
-**Endpoint**: `https://redis-task-lal6p80a8-pawarpankaj41-gmailcom.vercel.app/base/latest_info/`
+**Endpoint**: `https://redis-task.vercel.app/base/latest_info/`
 
 **Parameters**:
 - `device_id`: (integer) The ID of the device. Example: 25029
@@ -64,7 +64,7 @@ curl -X GET \
 
 ```
 curl -X GET \
-  'https://redis-task-lal6p80a8-pawarpankaj41-gmailcom.vercel.app/base/start_end_location/?device_id=25029' \
+  'https://redis-task.vercel.app/base/start_end_location/?device_id=25029' \
   --header 'Accept: */*' \
   --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
 ```
@@ -73,7 +73,7 @@ curl -X GET \
 
 **HTTP Method**: GET
 
-**Endpoint**: `https://redis-task-lal6p80a8-pawarpankaj41-gmailcom.vercel.app/base/start_end_location/`
+**Endpoint**: `https://redis-task.vercel.app/base/start_end_location/`
 
 **Parameters**:
 - `device_id`: (integer) The ID of the device. Example: 25029
